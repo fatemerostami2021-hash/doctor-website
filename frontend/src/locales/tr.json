@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Doktor Hakkında",
+    "services": "Hizmetler",
+    "articles": "Makaleler",
+    "videos": "Videolar",
+    "contact": "İletişim",
+    "appointment": "Randevu Al"
+  },
+  "hero": {
+    "title": "Kalp Sağlığınız",
+    "subtitle": "Önceliğimizdir",
+    "description": "Kardiyoloji uzmanı ve Girişimsel Kardiyoloji Fellow'u, kardiyovasküler hastalıkların teşhis ve tedavisinde 15 yılı aşkın deneyim",
+    "cta1": "Randevu Al",
+    "cta2": "Hizmetlerimiz"
+  },
+  "services": {
+    "title": "Uzman Hizmetler",
+    "subtitle": "En gelişmiş ekipmanları kullanarak kapsamlı kardiyovasküler teşhis ve tedavi hizmetleri",
+    "viewAll": "Tüm Hizmetleri Gör",
+    "moreInfo": "Devamını Oku"
+  },
+  "about": {
+    "title": "Doktor Hakkında",
+    "education": "Eğitim",
+    "experience": "Bilimsel Geçmiş",
+    "degree1": "Tıp Doktorası - Tahran Tıp Üniversitesi",
+    "degree2": "Dahiliye Uzmanlığı - Şehid Beşti Üniversitesi",
+    "degree3": "Kardiyoloji Uzmanlığı - Tahran Tıp Üniversitesi",
+    "degree4": "Girişimsel Kardiyoloji Fellow'u"
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Randevu veya danışmanlık için lütfen aşağıdaki iletişim kanallarından bize ulaşın",
+    "address": "Klinik Adresi",
+    "phone": "Telefon",
+    "hours": "Çalışma Saatleri",
+    "email": "E-posta",
+    "whatsapp": "WhatsApp ile İletişim",
+    "whatsappDesc": "Ücretsiz danışmanlık için tıklayın",
+    "location": "Klinik Konumu"
+  },
+  "appointment": {
+    "title": "Randevu Al",
+    "subtitle": "Lütfen aşağıdaki formu doldurun. Ekibimiz en kısa sürede sizinle iletişime geçecektir.",
+    "name": "Ad Soyad",
+    "phone": "Telefon Numarası",
+    "email": "E-posta",
+    "date": "Tercih Edilen Tarih (İsteğe Bağlı)",
+    "service": "Hizmet Türü",
+    "selectService": "Seçin",
+    "visit": "Uzman Muayenesi",
+    "message": "Notlar",
+    "submit": "Talep Gönder",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Talebiniz Alındı",
+    "successMsg": "Ekibimiz yakında sizinle iletişime geçecek.",
+    "newRequest": "Yeni Talep"
+  },
+  "footer": {
+    "title": "Kardiyoloji Uzmanı",
+    "subtitle": "Girişimsel Kardiyoloji Fellow'u",
+    "description": "Girişimsel Kardiyoloji Fellow'u, kardiyovasküler hastalıkların teşhis ve tedavisinde yılların deneyimi.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "readMore": "Devamını Oku",
+    "loading": "Yükleniyor...",
+    "error": "Yükleme hatası",
+    "notFound": "Öğe bulunamadı",
+    "darkMode": "Karanlık",
+    "lightMode": "Aydınlık",
+    "lang": "Dil"
+  }
+}
