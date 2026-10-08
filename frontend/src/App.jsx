@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Heart3D from './Heart3D.jsx'
+import Logo from './Logo.jsx'
 const LANGS = [['fa','فارسی'],['en','English'],['ar','العربية'],['tr','Türkçe']]
 const ICONS = ['M3 12h4l3-8 4 16 3-8h4','M12 21s-8-5.5-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.500-8 11-8 11z','M6 3v6a4 4 0 008 0V3M10 13v3a4 4 0 008 0v-2','M3 17l5-6 4 3 5-8 4 5']
 
@@ -15,7 +16,7 @@ function Tilt({ children, className }) {
 
 export default function App() {
   const { t, i18n } = useTranslation()
-  const [dark, setDark] = useState(false), [sent, setSent] = useState(false)
+  const [dark, setDark] = useState(false), [stage, setStage] = useState(0), [sent, setSent] = useState(false)
   const lng = i18n.resolvedLanguage || 'en'
   useEffect(() => {
     document.documentElement.dir = ['fa','ar'].includes(lng) ? 'rtl' : 'ltr'
@@ -26,7 +27,7 @@ export default function App() {
   const submit = e => { e.preventDefault(); setSent(true) }
   return (<>
     <header className="nav">
-      <a className="logo" href="#home"><span className="pulse" />Dr.</a>
+      <a className="logo" href="#home"><Logo /><span className="brand"><b>{t('brand')}</b><small>{t('tag')}</small></span></a>
       <nav>{t('nav').map((n,i)=><a key={i} href={'#'+ids[i]}>{n}</a>)}</nav>
       <div className="tools">
         <select value={lng} onChange={e=>i18n.changeLanguage(e.target.value)} aria-label="Language">
@@ -42,7 +43,10 @@ export default function App() {
           <p>{t('desc')}</p>
           <div className="row"><a className="btn big" href="#contact">{t('book')}</a><a className="btn big line" href="#services">{t('svc')}</a></div>
         </div>
-        <Heart3D />
+        <div className="visual">
+          <Heart3D onStage={setStage} />
+          <ol className="path" style={{'--p':(stage+1)/4}}>{t('stages').map((n,i)=><li key={i} className={i<=stage?'on':''}>{n}</li>)}</ol>
+        </div>
       </section>
       <section className="stats">{t('stats').map(([n,l],i)=><div key={i}><b>{n}</b><span>{l}</span></div>)}</section>
       <section id="services" className="sec">

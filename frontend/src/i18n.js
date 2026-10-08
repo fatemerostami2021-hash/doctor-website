@@ -34,6 +34,10 @@ tr:{nav:['Ana Sayfa','Doktor','Hizmetler','İletişim'],book:'Randevu al',h1:'Ka
  stats:[['15+','Yıllık deneyim'],['8.000+','İşlem'],['4','Dil']],
  contact:'Randevunuzu alın',cSub:'Formu doldurun, ekibimiz sizi arasın.',name:'Ad soyad',phone:'Telefon numarası',date:'Tercih edilen tarih',svcSel:'Hizmet',send:'Talebi gönder',ok:'Talebiniz alındı. Yakında sizinle iletişime geçeceğiz.',
  info:['Klinik adresi','Çalışma saatleri'],addr:'Şiraz, İran',hrs:'Cmt–Çar, 9:00–19:00',rights:'Tüm hakları saklıdır.'}}
+Object.assign(T.en,{brand:'Cardia',tag:'Heart & Vascular Clinic',stages:['Diagnosis','Treatment','Recovery','Stronger heart']})
+Object.assign(T.fa,{brand:'کاردیا',tag:'کلینیک قلب و عروق',stages:['تشخیص','درمان','بازتوانی','قلب قوی‌تر']})
+Object.assign(T.ar,{brand:'كارديا',tag:'عيادة القلب والأوعية',stages:['التشخيص','العلاج','التعافي','قلب أقوى']})
+Object.assign(T.tr,{brand:'Cardia',tag:'Kalp ve Damar Kliniği',stages:['Teşhis','Tedavi','İyileşme','Güçlü kalp']})
 i18n.use(LD).use(initReactI18next).init({
  resources:Object.fromEntries(Object.entries(T).map(([k,v])=>[k,{translation:v}])),
  fallbackLng:'en',supportedLngs:['en','fa','ar','tr'],returnObjects:true,interpolation:{escapeValue:false}})
