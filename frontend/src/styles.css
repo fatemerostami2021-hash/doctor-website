@@ -1,0 +1,37 @@
+:root{--bg:#f6f9f9;--fg:#0c2530;--mut:#51676f;--card:#fff;--ac:#0e8f86;--red:#d62839;--hero1:#0d4f55;--hero2:#08293a;--bd:#d9e5e6}
+[data-theme=dark]{--bg:#08141b;--fg:#e7f1f2;--mut:#93a9b0;--card:#0f212b;--bd:#1b3440}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--fg);font:16px/1.7 'Sora','Vazirmatn',sans-serif;transition:background .3s}
+[dir=rtl] body,[dir=rtl] input,[dir=rtl] select{font-family:'Vazirmatn','Sora',sans-serif}
+a{color:inherit;text-decoration:none}:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 5vw;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+.nav nav{display:flex;gap:26px}.nav nav a{color:var(--mut)}.nav nav a:hover{color:var(--ac)}
+.logo{font-weight:800;font-size:22px;display:flex;align-items:center;gap:8px}
+.pulse{width:12px;height:12px;border-radius:50%;background:var(--red);animation:pulse 1.9s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #d6283966}50%{box-shadow:0 0 0 10px #d6283900}}
+.tools{display:flex;gap:10px;align-items:center}
+select,input{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px 12px}
+.ghost{background:none;border:1px solid var(--bd);color:var(--fg);border-radius:10px;width:42px;height:42px;cursor:pointer;font-size:18px}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:10px 18px;font-weight:600;cursor:pointer;font:inherit;font-weight:600;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.big{padding:14px 26px}.btn.line{background:transparent;border:2px solid #fff;color:#fff}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:calc(100vh - 66px);padding:0 5vw;background:radial-gradient(circle at 75% 50%,var(--hero1),var(--hero2) 70%);color:#fff;overflow:hidden}
+.hero h1{font-size:clamp(40px,6vw,76px);line-height:1.1;font-weight:800}
+.hero h1 span{display:block;color:#3fe0cf}.hero p{margin:24px 0 32px;max-width:52ch;color:#cfe6e8}
+.row{display:flex;gap:14px;flex-wrap:wrap}.heart3d{height:min(80vh,640px);width:100%}
+.stats{display:flex;justify-content:center;gap:clamp(24px,8vw,120px);padding:40px 5vw;background:var(--card);border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.stats div{text-align:center}.stats b{display:block;font-size:40px;color:var(--red)}.stats span{color:var(--mut)}
+.sec{padding:96px 5vw;max-width:1200px;margin:auto}.sec h2{font-size:clamp(28px,4vw,44px);font-weight:800}
+.sub{color:var(--mut);margin:8px 0 40px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;perspective:1000px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:28px;transition:transform .15s,box-shadow .3s;transform-style:preserve-3d}
+.card:hover{box-shadow:0 24px 50px -20px #0e8f8666}
+.card svg{width:44px;height:44px;fill:none;stroke:var(--ac);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px;transform:translateZ(30px)}
+.card h3{font-size:20px;transform:translateZ(20px)}.card p{color:var(--mut);margin-top:6px}
+.edu{list-style:none;margin-top:28px;border-inline-start:3px solid var(--ac);padding-inline-start:26px;display:grid;gap:18px;font-size:18px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+dt{font-weight:700;margin-top:18px}dd{color:var(--mut)}
+form{display:grid;gap:14px;align-content:start;background:var(--card);padding:28px;border-radius:20px;border:1px solid var(--bd)}
+.ok{background:var(--card);padding:28px;border-radius:20px;border:2px solid var(--ac);align-self:start}
+footer{text-align:center;padding:32px;color:var(--mut);border-top:1px solid var(--bd)}
+@media(max-width:860px){.hero,.contact{grid-template-columns:1fr}.heart3d{height:340px}.nav nav{display:none}.hero{padding-top:30px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
